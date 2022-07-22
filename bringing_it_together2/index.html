@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="IE=edge" http-equiv="X-UA_Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>Bringing it together problem 2</title>
+</head>
+<body>
+<h1>Bringing it together problem #2</h1>
+
+    <form id="movieTicket">
+        <h1>Movie Ticket Cost</h1>
+        <h3>Type in your age and the start time of the movie you wish to see.</h3>
+
+        <!--JWD:  USER INPUTS FOR AGE  -->
+        <label for="age">Age: </label><input type="number" id="age" min="0" max="120" required><br>
+
+        <!--JWD:  USER INPUTS FOR START TIME HOURS -->
+        <h3>Please enter the movie start time Hr:Mins.</h3><br>
+        <label for="timeHours">Hour: </label>
+        <input type="number" id="timeHours" min="1" max="12" required>
+        <!--JWD:  USER INPUTS FOR START TIME MINUTES -->
+        <label for="timeMinutes">Minutes: </label>
+        <input type="number" id="timeMinutes" min="0" max="59" required>
+        <!--JWD:  RADIO BUTTONS -->
+        <input type="radio" id="am" name="timeOfDay" value="am" checked><label for="am">AM</label>
+        <input type="radio" id="pm" name="timeOfDay" value="pm"><label for="pm">PM</label><br>
+        <br>
+        <!--JWD:  CALCULATION BUTTON -->
+        <input type="button" id="calcTicketPrice" value="Get ticket price">
+        <br><br>
+        <h1 id="ticketPrice"></h1>
+
+
+
+    </form>
+
+
+
+<script src="JS/script.js"></script>
+
+</body>
+</html>
